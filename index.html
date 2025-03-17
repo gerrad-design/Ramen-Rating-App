@@ -6,8 +6,33 @@
     <title>Ramen Rating App</title>
 </head>
 <body>
+    <h1>Ramen Rater</h1>
+    <img width="180" height="180" src="https://moringa.instructure.com/courses/967/files/517801/preview">
+    <img width="180" height="180" src="https://moringa.instructure.com/courses/967/files/517800/preview">
+    <img width="180" height="180" src="https://moringa.instructure.com/courses/967/files/517799/preview">
+    <img width="180" height="180" src="https://moringa.instructure.com/courses/967/files/517798/preview">
+    <img width="180" height="180" src="https://moringa.instructure.com/courses/967/files/517797/preview">
     <div id="ramen-menu"></div>
-    <div id="ramen-detail"></div>
+    <div id="ramen-detail">
+        <h2 id="ramen-name"></h2>
+        <p id="ramen-restaurant"></p>
+        <p id="ramen-rating"></p>
+        <p id="ramen-comment"></p>
+    </div>
+   <div id="new-ramen-form">
+        <form id="new-ramen-form">
+            <p>
+                <h1>Add New Ramen</h1>
+             </p>
+        <p><input type="text" id="name" placeholder="Name" required></p>
+        <p><input type="text" id="restaurant" placeholder="Restaurant" required></p>
+        <p><input type="url" id="image" placeholder="Image URL" required>
+        <p><input type="number" id="rating" placeholder="Rating" min="1" max="10" required></p>
+        <p><input type="text" id="comment" placeholder="Comment" required></p>
+            <button type="submit">Create</button>
+    </form>
+    </div>
+    </form>
     <script src="script.js"></script>
 </body>
 </html>
